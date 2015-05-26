@@ -8,6 +8,8 @@ EXTRA_CFLAGS += -DCONFIG_ALWAYS_ENFORCE=true
 endif
 endif
 
+CFLAGS_KERNEL := -fno-strict-aliasing
+
 obj-$(CONFIG_SECURITY_SELINUX) := selinux.o
 
 selinux-y := avc.o hooks.o selinuxfs.o netlink.o nlmsgtab.o netif.o \

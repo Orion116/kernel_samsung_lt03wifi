@@ -1,4 +1,4 @@
-CFLAGS_KERNEL := -fno-strict-aliasing
+CFLAGS_KERNEL := -fno-strict-aliasing -Os
 
 obj-$(CONFIG_CFG80211) += cfg80211.o
 obj-$(CONFIG_LIB80211) += lib80211.o

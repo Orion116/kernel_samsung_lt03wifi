@@ -2,7 +2,7 @@
 # Makefile for the Linux network device drivers.
 #
 
-CFLAGS_KERNEL := -fno-strict-aliasing
+CFLAGS_KERNEL := -fno-strict-aliasing -Os
 
 #
 # Networking Core Drivers
